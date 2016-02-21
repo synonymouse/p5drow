@@ -18,7 +18,9 @@
   "homepage": "https://github.com/synonymouse/bourbon_nojs_boilerplate#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
+    "bs-html-injector": "^3.0.0",
     "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.1.1",
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2"
