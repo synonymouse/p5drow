@@ -34,7 +34,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       includePaths: bourbon,
       includePaths: neat
-    }))
+    }).on('error', sass.logError))
     .pipe(gulp.dest(src.css))
     .pipe(browserSync.reload({
       stream: true

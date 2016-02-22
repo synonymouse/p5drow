@@ -7,17 +7,17 @@ html
     link(rel='stylesheet', href='css/normalize.css')
     link(href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic', rel='stylesheet', type='text/css')
-  body
+  body.container
     header
-      div.top-container
-        a(href="#")
+      div.top-wrap
+        a.logo(href="#")
           img(src="images/Logo.png", alt="Logo")
         h1
           a(href="#") Город Ишим
         p
           a(href="#") электронный журнал
 
-      div
+      div.nav-wrap
         nav
           ul
             li
@@ -31,7 +31,7 @@ html
             li
               a(href="#") Объявления
 
-    main
+    main.main-container
       article
         section
           a(href="#")
@@ -88,7 +88,7 @@ html
             a(href="#")
               img(src="#", alt="")
 
-    aside
+    aside.aside-container
       article
         nav
           ul
@@ -107,8 +107,7 @@ html
             li
               a(href="#")
 
-    nav
-    footer
+    footer.footer-container
       p 2015 электронный журнал города Ишим
       nav
         ul

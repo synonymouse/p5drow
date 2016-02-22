@@ -1,2 +1,38 @@
 $max-width: em(1170) !global;
 
+//Main grid
+
+.container {
+  @include outer-container();
+}
+
+main.main-container {
+  @include span-columns(8);
+}
+
+aside.aside-container {
+  @include span-columns(3);
+}
+
+footer.footer-container {
+  @include span-columns(12);
+  @include omega();
+}
+
+// Top heading, logo, navigation
+
+.logo {
+  float: left;
+}
+
+.float {
+}
+
+div.top-wrap {
+  @include outer-container(50%);
+  text-align: center;
+}
+
+div.nav-wrap {
+  @include outer-container();
+}
