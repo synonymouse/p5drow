@@ -6,33 +6,41 @@ $max-width: em(1170) !global;
   @include outer-container();
 }
 
-main.main-container {
+.main-container {
   @include span-columns(8);
 }
 
-aside.aside-container {
+.aside-container {
   @include span-columns(3);
 }
 
-footer.footer-container {
+.footer-container {
   @include span-columns(12);
   @include omega();
 }
 
 // Top heading, logo, navigation
 
+.top-header {
+  line-height: 0;
+  text-align: center;
+}
+
 .logo {
   float: left;
 }
 
-.float {
-}
-
-div.top-wrap {
-  @include outer-container(50%);
+.top-wrap {
+  @include outer-container(em(363px));
   text-align: center;
+  padding-top: em(44px);
+  padding-bottom: em(44px);
 }
 
-div.nav-wrap {
-  @include outer-container();
+.nav-wrap {
+  @include span-columns(8);
+  ul li {
+    display: inline-block;
+    margin-right: em(39px);}
+    color: #000;
 }

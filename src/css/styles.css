@@ -23,9 +23,6 @@ body:before {
   width: 100%;
   z-index: -1; }
 
-a {
-  text-decoration: none; }
-
 .container {
   max-width: 73.125em;
   margin-left: auto;
@@ -35,52 +32,61 @@ a {
     content: "";
     display: table; }
 
-main.main-container {
+.main-container {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%; }
-  main.main-container:last-child {
+  .main-container:last-child {
     margin-right: 0; }
 
-aside.aside-container {
+.aside-container {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%; }
-  aside.aside-container:last-child {
+  .aside-container:last-child {
     margin-right: 0; }
 
-footer.footer-container {
+.footer-container {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   margin-right: 0; }
-  footer.footer-container:last-child {
+  .footer-container:last-child {
     margin-right: 0; }
+
+.top-header {
+  line-height: 0;
+  text-align: center; }
 
 .logo {
   float: left; }
 
-div.top-wrap {
-  max-width: 50%;
+.top-wrap {
+  max-width: 22.6875em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
-  div.top-wrap::after {
+  text-align: center;
+  padding-top: 2.75em;
+  padding-bottom: 2.75em; }
+  .top-wrap::after {
     clear: both;
     content: "";
     display: table; }
 
-div.nav-wrap {
-  max-width: 73.125em;
-  margin-left: auto;
-  margin-right: auto; }
-  div.nav-wrap::after {
-    clear: both;
-    content: "";
-    display: table; }
+.nav-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  color: #000; }
+  .nav-wrap:last-child {
+    margin-right: 0; }
+  .nav-wrap ul li {
+    display: inline-block;
+    margin-right: 2.4375em; }
 
 html {
   box-sizing: border-box; }
@@ -106,3 +112,14 @@ body:before {
   right: 0;
   width: 100%;
   z-index: -1; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200; }
