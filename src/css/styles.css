@@ -58,8 +58,7 @@ body:before {
     margin-right: 0; }
 
 .top-header {
-  line-height: 0;
-  text-align: center; }
+  line-height: 0; }
 
 .logo {
   float: left; }
@@ -114,7 +113,10 @@ body:before {
   z-index: -1; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    color: #000; }
 
 h1, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
