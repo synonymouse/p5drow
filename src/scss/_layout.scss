@@ -1,4 +1,5 @@
-$max-width: em(1170) !global;
+$max-width: rem(1280) !global;
+$em-base: 14px;
 
 //Main grid
 
@@ -25,21 +26,25 @@ $max-width: em(1170) !global;
   line-height: 0;
 }
 
+.top-paragraph {
+  font-size: 24px;
+}
+
 .logo {
   float: left;
 }
 
 .top-wrap {
-  @include outer-container(em(363px));
+  @include outer-container(rem(363px));
   text-align: center;
-  padding-top: em(44px);
-  padding-bottom: em(44px);
+  padding-top: rem(44px);
+  padding-bottom: rem(44px);
 }
 
 .nav-wrap {
   @include span-columns(8);
   ul li {
     display: inline-block;
-    margin-right: em(39px);}
+    margin-right: rem(39px);}
     color: #000;
 }

@@ -1,4 +1,23 @@
-$header-font: 'Roboto',  sans-serif;
-$body-font: 'Open Sans', sans-serif;
+$header-font: 'Proxima Nova Black', sans-serif;
+$body-font: Heuristica, sans-serif;
 
+@font-face {
+  font-family: 'Proxima Nova Black';
+  src: url("../fonts/Proxima Nova Black.otf") format("opentype"), local('Proxima Nova Black');
+}
 
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Proxima Nova Bold.otf") format("opentype"), local('Proxima Nova Bold');
+}
+
+@font-face {
+  font-family: Heuristica;
+  src: url("../fonts/Heuristica-Regular.otf") format("opentype"), local('Heuristica-Regular');
+}
+
+@font-face {
+  font-family: 'Heuristica-Italic';
+  font-style: italic;
+  src: url("../fonts/Heuristica-Italic.otf") format("opentype"), local('Heuristica-Italic');
+}

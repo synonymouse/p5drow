@@ -23,8 +23,25 @@ body:before {
   width: 100%;
   z-index: -1; }
 
+@font-face {
+  font-family: 'Proxima Nova Black';
+  src: url("../fonts/Proxima Nova Black.otf") format("opentype"), local("Proxima Nova Black"); }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Proxima Nova Bold.otf") format("opentype"), local("Proxima Nova Bold"); }
+
+@font-face {
+  font-family: Heuristica;
+  src: url("../fonts/Heuristica-Regular.otf") format("opentype"), local("Heuristica-Regular"); }
+
+@font-face {
+  font-family: 'Heuristica-Italic';
+  font-style: italic;
+  src: url("../fonts/Heuristica-Italic.otf") format("opentype"), local("Heuristica-Italic"); }
+
 .container {
-  max-width: 73.125em;
+  max-width: 80rem;
   margin-left: auto;
   margin-right: auto; }
   .container::after {
@@ -60,16 +77,19 @@ body:before {
 .top-header {
   line-height: 0; }
 
+.top-paragraph {
+  font-size: 24px; }
+
 .logo {
   float: left; }
 
 .top-wrap {
-  max-width: 22.6875em;
+  max-width: 25.92857rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 2.75em;
-  padding-bottom: 2.75em; }
+  padding-top: 3.14286rem;
+  padding-bottom: 3.14286rem; }
   .top-wrap::after {
     clear: both;
     content: "";
@@ -85,7 +105,7 @@ body:before {
     margin-right: 0; }
   .nav-wrap ul li {
     display: inline-block;
-    margin-right: 2.4375em; }
+    margin-right: 2.78571rem; }
 
 html {
   box-sizing: border-box; }
@@ -104,7 +124,7 @@ body:before {
   height: 100%;
   left: 0;
   margin: 0 auto;
-  max-width: 73.125em;
+  max-width: 80rem;
   opacity: 0.4;
   pointer-events: none;
   position: fixed;
@@ -118,10 +138,14 @@ a {
   a:hover {
     color: #000; }
 
-h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200; }
+body {
+  font-family: Heuristica, sans-serif;
+  font-size: 14px; }
 
-p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 200; }
+h1 {
+  font-family: "Proxima Nova Black", sans-serif;
+  font-size: 1.71429em; }
+
+h2, h3, h4 {
+  font-family: "Proxima Nova Black", sans-serif;
+  font-size: 18px; }
