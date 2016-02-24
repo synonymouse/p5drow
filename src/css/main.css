@@ -2146,6 +2146,11 @@ body:before {
   float: left;
   padding-right: 1.28571em; }
 
+.social-icons {
+  float: right; }
+  .social-icons a {
+    margin-right: 1.42857em; }
+
 .top-wrap {
   max-width: 25.42857em;
   margin-left: 28.92857em;
@@ -2164,9 +2169,6 @@ body:before {
   .nav-wrap ul li {
     display: inline-block;
     margin-right: 2.78571rem; }
-
-.social-icons {
-  float: right; }
 
 .top-paragraph {
   font-size: 24px; }
