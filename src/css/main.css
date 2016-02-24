@@ -2165,6 +2165,12 @@ body:before {
     display: inline-block;
     margin-right: 2.78571rem; }
 
+.social-icons {
+  float: right; }
+
+.top-paragraph {
+  font-size: 24px; }
+
 @font-face {
   font-family: 'Proxima Nova Black';
   src: url("../fonts/Proxima Nova Black.otf") format("opentype"), local("Proxima Nova Black"); }

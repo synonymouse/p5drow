@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -12,7 +12,7 @@ var reload = browserSync.reload;
 var src = {
   src: 'src',
   css: 'src/css',
-  scss: 'src/scss/*.scss',
+  scss: 'src/scss/**/*.scss',
   html: 'src/*.html',
   jade: 'src/*.jade'
 };
