@@ -1,7 +1,7 @@
 // Top heading, logo
 
 .top-container {
-  @include span-columns()
+  position: relative;
 }
 
 .top-header {
@@ -17,6 +17,9 @@
 
 .social-icons {
   float: right;
+  position: absolute;
+  right: 0px;
+  top: 66px;
   a {
   margin-right: em(20px);}
 }
@@ -29,12 +32,19 @@
   margin-right: em(513px);
   text-align: center;
   padding-top: em(44px);
-  padding-bottom: em(44px);
+  padding-bottom: em(21px);
 }
 
 .nav-wrap {
-  @include span-columns(8);
+  padding-top: em(26px);
+  padding-bottom: em(73px);
   ul li {
-    display: inline-block;
+    float: left;
     margin-right: rem(39px);}
+}
+
+.personal-items {
+  ul li {
+    margin-right: em(21.5px);
+    float: right;}
 }

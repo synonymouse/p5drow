@@ -1,3 +1,20 @@
 .top-paragraph {
   font-size: 24px;
+  padding-top: 0.6em;
+}
+
+.nav-wrap {
+  border-top: 1px solid #dddddd;
+  ul li {
+    font-family: $header-font;
+    text-transform: uppercase;}
+  a:hover {
+      border-bottom: 1px solid #dddddd;
+  }
+}
+
+.personal-items ul li:last-child {
+  border-right: 1px solid #dddddd;
+  height: em(40px);
+  padding-right: em(21.5px);
 }
