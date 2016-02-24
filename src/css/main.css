@@ -2103,41 +2103,6 @@ body:before {
 .fa-percent:before {
   content: ""; }
 
-@font-face {
-  font-family: 'Proxima Nova Black';
-  src: url("../fonts/Proxima Nova Black.otf") format("opentype"), local("Proxima Nova Black"); }
-
-@font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url("../fonts/Proxima Nova Bold.otf") format("opentype"), local("Proxima Nova Bold"); }
-
-@font-face {
-  font-family: Heuristica;
-  src: url("../fonts/Heuristica-Regular.otf") format("opentype"), local("Heuristica-Regular"); }
-
-@font-face {
-  font-family: 'Heuristica-Italic';
-  font-style: italic;
-  src: url("../fonts/Heuristica-Italic.otf") format("opentype"), local("Heuristica-Italic"); }
-
-a {
-  text-decoration: none;
-  color: #000; }
-  a:hover {
-    color: #000; }
-
-body {
-  font-family: Heuristica, sans-serif;
-  font-size: 16px; }
-
-h1 {
-  font-family: "Proxima Nova Black", sans-serif;
-  font-size: 1.5em; }
-
-h2, h3, h4 {
-  font-family: "Proxima Nova Black", sans-serif;
-  font-size: 18px; }
-
 .container {
   max-width: 80rem;
   margin-left: auto;
@@ -2177,9 +2142,6 @@ h2, h3, h4 {
   line-height: 0;
   margin: 0.4em; }
 
-.top-paragraph {
-  font-size: 24px; }
-
 .logo {
   float: left;
   padding-right: 1.28571em; }
@@ -2202,6 +2164,41 @@ h2, h3, h4 {
   .nav-wrap ul li {
     display: inline-block;
     margin-right: 2.78571rem; }
+
+@font-face {
+  font-family: 'Proxima Nova Black';
+  src: url("../fonts/Proxima Nova Black.otf") format("opentype"), local("Proxima Nova Black"); }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Proxima Nova Bold.otf") format("opentype"), local("Proxima Nova Bold"); }
+
+@font-face {
+  font-family: Heuristica;
+  src: url("../fonts/Heuristica-Regular.otf") format("opentype"), local("Heuristica-Regular"); }
+
+@font-face {
+  font-family: 'Heuristica-Italic';
+  font-style: italic;
+  src: url("../fonts/Heuristica-Italic.otf") format("opentype"), local("Heuristica-Italic"); }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    color: #000; }
+
+body {
+  font-family: Heuristica, sans-serif;
+  font-size: 14px; }
+
+h1 {
+  font-family: "Proxima Nova Black", sans-serif;
+  font-size: 1.71429em; }
+
+h2, h3, h4 {
+  font-family: "Proxima Nova Black", sans-serif;
+  font-size: 18px; }
 
 html {
   box-sizing: border-box; }
@@ -2227,21 +2224,3 @@ body:before {
   right: 0;
   width: 100%;
   z-index: -1; }
-
-a {
-  text-decoration: none;
-  color: #000; }
-  a:hover {
-    color: #000; }
-
-body {
-  font-family: Heuristica, sans-serif;
-  font-size: 14px; }
-
-h1 {
-  font-family: "Proxima Nova Black", sans-serif;
-  font-size: 1.71429em; }
-
-h2, h3, h4 {
-  font-family: "Proxima Nova Black", sans-serif;
-  font-size: 18px; }

@@ -1,35 +1,9 @@
-$max-width: rem(1280px)!global;
-$em-base: 14px;
-
-//Main grid
-
-.container {
-  @include outer-container();
-}
-
-.main-container {
-  @include span-columns(8);
-}
-
-.aside-container {
-  @include span-columns(3);
-}
-
-.footer-container {
-  @include span-columns(12);
-  @include omega();
-}
-
 // Top heading, logo, navigation
 
 .top-header {
   padding-top: 0px;
   line-height: 0;
-}
-
-.top-paragraph {
-  font-size: 24px;
-  line-height: 0.5em;
+  margin: 0.4em;
 }
 
 .logo {
@@ -51,6 +25,8 @@ $em-base: 14px;
   ul li {
     display: inline-block;
     margin-right: rem(39px);}
-    color: #000;
 }
 
+.social-icons {
+
+}

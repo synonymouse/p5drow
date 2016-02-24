@@ -1,0 +1,23 @@
+$max-width: rem(1280px)!global;
+$em-base: 14px;
+
+//Main grid
+
+.container {
+  @include outer-container();
+}
+
+.main-container {
+  @include span-columns(8);
+}
+
+.aside-container {
+  @include span-columns(3);
+}
+
+.footer-container {
+  @include span-columns(12);
+  @include omega();
+}
+
+
