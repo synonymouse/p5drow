@@ -13,8 +13,11 @@
   }
 }
 
-.personal-items ul li:last-child {
+.personal-items--border {
   border-right: 1px solid #dddddd;
-  height: em(40px);
-  padding-right: em(21.5px);
+  padding: em(14px) em(21.5px);
+}
+
+.personal-items {
+
 }

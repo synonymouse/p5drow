@@ -2160,9 +2160,8 @@ body:before {
 .top-wrap {
   max-width: 25.42857em;
   margin-left: 28.92857em;
-  margin-right: 36.64286em;
   text-align: center;
-  padding-top: 3.14286em;
+  padding-top: 2.85714em;
   padding-bottom: 1.5em; }
 
 .nav-wrap {
@@ -2188,10 +2187,9 @@ body:before {
   .nav-wrap a:hover {
     border-bottom: 1px solid #dddddd; }
 
-.personal-items ul li:last-child {
+.personal-items--border {
   border-right: 1px solid #dddddd;
-  height: 2.85714em;
-  padding-right: 1.53571em; }
+  padding: 1em 1.53571em; }
 
 @font-face {
   font-family: 'Proxima Nova Black';
