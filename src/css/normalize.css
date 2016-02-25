@@ -422,7 +422,7 @@ optgroup {
   font-weight: bold;
 }
 
-ul, menu, dir, p {
+ul, menu, dir, p, h2 {
     display: block;
     list-style-type: disc;
     -webkit-margin-before: 0em;

@@ -8,13 +8,30 @@ $em-base: 14px;
 }
 
 .main-container {
-  @include span-columns(8);
-  margin-left: em(55px);
-  padding-right: -40px;
+  @include span-columns(8.02);
+  padding-left: em(55px);
+  margin-right: em(66px);
+}
+
+.article-container {
+  margin-bottom: em(49px);
+  .article {
+    h2 {
+      padding-bottom: em(24px);
+    }
+    padding: em(31px);
+  }
+  .article-footer {
+    padding-left: em(30px);
+    padding-bottom: em(30px);
+    a {
+      margin-right: em(29px);}
+  }
 }
 
 .aside-container {
-  @include span-columns(3);
+  @include span-columns(2.98);
+  margin-bottom: em(49px);
 }
 
 .footer-container {
