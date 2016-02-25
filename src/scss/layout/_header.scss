@@ -18,9 +18,12 @@
 .social-icons {
   float: right;
   position: absolute;
-  right: 0px;
-  top: 66px;
+  right: em(85px);
+  top: em(66px);
   a {
+    &:last-child {
+      margin-right: 0;
+    }
   margin-right: em(20px);}
 }
 
@@ -35,8 +38,7 @@
 }
 
 .nav-wrap {
-  padding-top: em(26px);
-  padding-bottom: em(73px);
+  padding: em(26px) em(85px) em(73px);
   ul li {
     float: left;
     margin-right: rem(39px);}
@@ -44,6 +46,7 @@
 
 .personal-items {
   ul li {
-    margin-right: em(21.5px);
+    margin: 0;
+    padding-left: em(21.5px);
     float: right;}
 }

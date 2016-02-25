@@ -2116,7 +2116,9 @@ body:before {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%; }
+  width: 65.88078%;
+  margin-left: 3.92857em;
+  padding-right: -40px; }
   .main-container:last-child {
     margin-right: 0; }
 
@@ -2133,6 +2135,7 @@ body:before {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  margin-left: 3.92857em;
   margin-right: 0; }
   .footer-container:last-child {
     margin-right: 0; }
@@ -2152,10 +2155,12 @@ body:before {
 .social-icons {
   float: right;
   position: absolute;
-  right: 0px;
-  top: 66px; }
+  right: 6.07143em;
+  top: 4.71429em; }
   .social-icons a {
     margin-right: 1.42857em; }
+    .social-icons a:last-child {
+      margin-right: 0; }
 
 .top-wrap {
   max-width: 25.42857em;
@@ -2165,14 +2170,14 @@ body:before {
   padding-bottom: 1.5em; }
 
 .nav-wrap {
-  padding-top: 1.85714em;
-  padding-bottom: 5.21429em; }
+  padding: 1.85714em 6.07143em 5.21429em; }
   .nav-wrap ul li {
     float: left;
     margin-right: 2.78571rem; }
 
 .personal-items ul li {
-  margin-right: 1.53571em;
+  margin: 0;
+  padding-left: 1.53571em;
   float: right; }
 
 .top-paragraph {
@@ -2190,6 +2195,12 @@ body:before {
 .personal-items--border {
   border-right: 1px solid #dddddd;
   padding: 1em 1.53571em; }
+
+.article-container {
+  border: 1px solid #dddddd; }
+
+.aside-container {
+  border: 1px solid #dddddd; }
 
 @font-face {
   font-family: 'Proxima Nova Black';

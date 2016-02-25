@@ -9,6 +9,8 @@ $em-base: 14px;
 
 .main-container {
   @include span-columns(8);
+  margin-left: em(55px);
+  padding-right: -40px;
 }
 
 .aside-container {
@@ -17,6 +19,7 @@ $em-base: 14px;
 
 .footer-container {
   @include span-columns(12);
+  margin-left: em(55px);
   @include omega();
 }
 
