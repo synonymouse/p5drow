@@ -51,7 +51,9 @@ gulp.task('server', ['sass'], function () {
     server: {
       baseDir: 'src'
     },
-    notify: false
+    notify: false,
+    tunnel: true,
+    tunnel: 'turumtumtum'
   });
 });
 

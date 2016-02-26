@@ -59,13 +59,14 @@
   border: 1px solid #dddddd;
   font-size: 18px;
   .aside-nav {
-    text-align: center;
     font-family: $header-font;
+    nav {
+      padding-bottom: 10px;
+    }
     a:hover {
       color: #ddd;
     }
   }
-
   a {
     margin-bottom: 17px;
     display: inline-block;
@@ -75,4 +76,12 @@
     font-size: 15px;
     font-family: 'Proxima Nova Semibold', sans-serif;}
   }
+  .photos {
+    margin-right: -30px;
+    a {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
+}
+

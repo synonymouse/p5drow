@@ -33,11 +33,11 @@ $magic-number: 8.03;
 .aside-container {
   @include span-columns(3.14);
   margin-bottom: 49px;
-  padding: 31px 26px;
+  padding: 31px 26px 0;
   .aside-nav {
-    margin-bottom: 31px;
     ul li {
       padding-right: 29px;
+      padding-bottom: 10px;
       display: inline-block;
       &:last-child {
         padding: 0;}

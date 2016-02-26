@@ -2121,16 +2121,15 @@ html {
   margin-right: 2.35765%;
   width: 24.42593%;
   margin-bottom: 49px;
-  padding: 31px 26px; }
+  padding: 31px 26px 0; }
   .aside-container:last-child {
     margin-right: 0; }
-  .aside-container .aside-nav {
-    margin-bottom: 31px; }
-    .aside-container .aside-nav ul li {
-      padding-right: 29px;
-      display: inline-block; }
-      .aside-container .aside-nav ul li:last-child {
-        padding: 0; }
+  .aside-container .aside-nav ul li {
+    padding-right: 29px;
+    padding-bottom: 10px;
+    display: inline-block; }
+    .aside-container .aside-nav ul li:last-child {
+      padding: 0; }
 
 .pages-container {
   float: left;
@@ -2252,8 +2251,9 @@ html {
   border: 1px solid #dddddd;
   font-size: 18px; }
   .aside-container .aside-nav {
-    text-align: center;
     font-family: "Proxima Nova Bold", sans-serif; }
+    .aside-container .aside-nav nav {
+      padding-bottom: 10px; }
     .aside-container .aside-nav a:hover {
       color: #ddd; }
   .aside-container a {
@@ -2264,6 +2264,11 @@ html {
       border-bottom: 1px solid #dddddd;
       font-size: 15px;
       font-family: 'Proxima Nova Semibold', sans-serif; }
+  .aside-container .photos {
+    margin-right: -30px; }
+    .aside-container .photos a {
+      margin-right: 30px;
+      margin-bottom: 30px; }
 
 @font-face {
   font-family: 'Proxima Nova Black';
