@@ -20,6 +20,11 @@
 
 .article-container {
   border: 1px solid #dddddd;
+  max-width: 100%;
+}
+
+.article--img {
+  max-width: 100%;
 }
 
 .fa-calendar-o, .fa-comment-o {

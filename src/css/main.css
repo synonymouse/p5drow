@@ -2218,7 +2218,11 @@ html {
   padding: 1em 1.53571em; }
 
 .article-container {
-  border: 1px solid #dddddd; }
+  border: 1px solid #dddddd;
+  max-width: 100%; }
+
+.article--img {
+  max-width: 100%; }
 
 .fa-calendar-o, .fa-comment-o {
   margin-right: 0.85714em; }
