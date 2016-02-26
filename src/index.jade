@@ -70,12 +70,24 @@ html
             a(href="#") <i class="fa fa-calendar-o"></i>24 сентября, 2015
             a(href="#") <i class="fa fa-comment-o"></i>25 комментариев
 
+      nav.pages-container
+        ul
+          li: a(href="#") 1
+          li: a(href="#") 2
+          li: a(href="#") 3
+          li: a(href="#") 4
+          li: a(href="#") 5
+          li: a(href="#") 6
+          li: a(href="#") ...
+          li: a(href="#") 23
+          li: a(href="#") >
+
     aside.aside-container
-      article
-        nav
+      article.aside-article
+        nav.aside-nav
           ul
-            li Популярное
-            li Обсуждаемое
+            li: a(href="#") Популярное
+            li: a(href="#") Обсуждаемое
         section
           a(href="#")
             span Вышел первый трейлер сиквела «Дня независимости»
@@ -97,7 +109,7 @@ html
           a(href="#")
             img(src="", alt="")
           a(href="#")
-            span img(src="", alt="")
+            img(src="", alt="")
           a(href="#")
             img(src="", alt="")
           a(href="#")
@@ -106,10 +118,10 @@ html
 
     footer.footer-container
       p 2015 электронный журнал города Ишим
-      nav
+      nav.feedback
         ul
-          li Реклама
-          li Соц. Сети
-          li Обратная связь
+          li: a(href="#") Реклама
+          li: a(href="#") Соц. Сети
+          li: a(href="#") Обратная связь
 
 

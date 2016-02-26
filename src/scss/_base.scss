@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/Proxima Nova Semibold.otf") format("opentype"), local('Proxima Nova Semibold');
+}
+
+@font-face {
   font-family: Heuristica;
   src: url("../fonts/Heuristica-Regular.otf") format("opentype"), local('Heuristica-Regular');
 }
@@ -23,9 +28,8 @@ a {
   text-decoration: none;
   color: #000;
   &:hover {
-    color: #000;
+    color: #000;}
   }
-}
 
 body {
   font-family: $body-font;
@@ -33,7 +37,7 @@ body {
 }
 
 h1 {
-  font-family: $header-font;
+  font-family: 'Proxima Nova Black', sans-serif;
   font-size: em(24px);
 }
 

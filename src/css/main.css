@@ -2097,7 +2097,7 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 66.05138%;
+  width: 66.13668%;
   padding-left: 3.92857em;
   margin-right: 4.71429em; }
   .main-container:last-child {
@@ -2119,20 +2119,48 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.06117%;
-  margin-bottom: 3.5em; }
+  width: 24.42593%;
+  margin-bottom: 49px;
+  padding: 31px 26px; }
   .aside-container:last-child {
     margin-right: 0; }
+  .aside-container .aside-nav {
+    margin-bottom: 31px; }
+    .aside-container .aside-nav ul li {
+      padding-right: 29px;
+      display: inline-block; }
+      .aside-container .aside-nav ul li:last-child {
+        padding: 0; }
+
+.pages-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding-left: 3.92857em;
+  margin-bottom: 6.07143em;
+  text-align: center; }
+  .pages-container:last-child {
+    margin-right: 0; }
+  .pages-container ul li {
+    display: inline-block;
+    margin-right: 2.78571em; }
 
 .footer-container {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-left: 3.92857em;
+  padding: 2.14286em 3.92857em;
   margin-right: 0; }
   .footer-container:last-child {
     margin-right: 0; }
+  .footer-container p {
+    display: inline-block; }
+  .footer-container .feedback {
+    float: right; }
+    .footer-container .feedback ul li {
+      display: inline-block; }
 
 .top-container {
   position: relative; }
@@ -2181,7 +2209,7 @@ html {
 .nav-wrap {
   border-top: 1px solid #dddddd; }
   .nav-wrap ul li {
-    font-family: "Proxima Nova Black", sans-serif;
+    font-family: "Proxima Nova Bold", sans-serif;
     text-transform: uppercase; }
   .nav-wrap a:hover {
     border-bottom: 1px solid #dddddd; }
@@ -2193,11 +2221,49 @@ html {
 .article-container {
   border: 1px solid #dddddd; }
 
-.aside-container {
-  border: 1px solid #dddddd; }
-
 .fa-calendar-o, .fa-comment-o {
   margin-right: 0.85714em; }
+
+.pages-container {
+  font-family: "Proxima Nova Bold", sans-serif; }
+  .pages-container a:hover {
+    color: #dddddd; }
+
+.article-footer {
+  font-style: italic; }
+  .article-footer a {
+    color: #696969; }
+    .article-footer a:hover {
+      color: #696969; }
+
+.footer-container {
+  border-top: 1px solid #dddddd; }
+  .footer-container .feedback {
+    font-family: "Proxima Nova Bold", sans-serif;
+    text-transform: uppercase; }
+    .footer-container .feedback ul li {
+      margin-right: 2.71429em; }
+      .footer-container .feedback ul li:last-child {
+        margin-right: 0; }
+      .footer-container .feedback ul li a:hover {
+        border-bottom: 1px solid #dddddd; }
+
+.aside-container {
+  border: 1px solid #dddddd;
+  font-size: 18px; }
+  .aside-container .aside-nav {
+    text-align: center;
+    font-family: "Proxima Nova Bold", sans-serif; }
+    .aside-container .aside-nav a:hover {
+      color: #ddd; }
+  .aside-container a {
+    margin-bottom: 17px;
+    display: inline-block; }
+    .aside-container a span {
+      display: inline;
+      border-bottom: 1px solid #dddddd;
+      font-size: 15px;
+      font-family: 'Proxima Nova Semibold', sans-serif; }
 
 @font-face {
   font-family: 'Proxima Nova Black';
@@ -2206,6 +2272,10 @@ html {
 @font-face {
   font-family: 'Proxima Nova Bold';
   src: url("../fonts/Proxima Nova Bold.otf") format("opentype"), local("Proxima Nova Bold"); }
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/Proxima Nova Semibold.otf") format("opentype"), local("Proxima Nova Semibold"); }
 
 @font-face {
   font-family: Heuristica;
@@ -2227,11 +2297,11 @@ body {
   font-size: 14px; }
 
 h1 {
-  font-family: "Proxima Nova Black", sans-serif;
+  font-family: 'Proxima Nova Black', sans-serif;
   font-size: 1.71429em; }
 
 h2, h3, h4 {
-  font-family: "Proxima Nova Black", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px; }
 
 html {
