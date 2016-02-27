@@ -2189,17 +2189,22 @@ html {
   text-align: center;
   padding-top: 2.85714em;
   padding-bottom: 1.5em; }
+  @media screen and (max-width: 1010px) {
+    .top-wrap {
+      display: none; } }
 
 .nav-wrap {
   padding: 1.85714em 6.07143em 5.21429em; }
   .nav-wrap ul li {
     float: left;
-    margin-right: 2.78571rem; }
+    padding: 1em 1.53571em; }
 
-.personal-items ul li {
-  margin: 0;
-  padding-left: 1.53571em;
-  float: right; }
+.personal-items {
+  margin-top: -1em; }
+  .personal-items ul li {
+    margin: 0;
+    padding: 1em 1.53571em;
+    float: right; }
 
 .top-paragraph {
   font-size: 24px;
@@ -2214,8 +2219,7 @@ html {
     border-bottom: 1px solid #dddddd; }
 
 .personal-items--border {
-  border-right: 1px solid #dddddd;
-  padding: 1em 1.53571em; }
+  border-right: 1px solid #dddddd; }
 
 .article-container {
   border: 1px solid #dddddd;

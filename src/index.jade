@@ -5,6 +5,7 @@ html
     title p4nice
     link(rel='stylesheet', href='css/main.css')
     link(rel='stylesheet', href='css/normalize.css')
+    meta(name="viewport" content="width=device-width,initial-scale=1")
   body.container
     header.top-container
       div.top-wrap
@@ -27,7 +28,7 @@ html
         nav.personal-items
           ul
             li: a(href="#") <i class="fa fa-search"></i> Поиск
-            li: a.personal-items--border(href="#") <i class="fa fa-user"></i> Войти
+            li.personal-items--border: a(href="#") <i class="fa fa-user"></i> Войти
 
     main.main-container
       article.article-container

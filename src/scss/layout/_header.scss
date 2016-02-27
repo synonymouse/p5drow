@@ -35,18 +35,22 @@
   text-align: center;
   padding-top: em(40px);
   padding-bottom: em(21px);
+  @include media($laptop) {
+    display: none;
+  }
 }
 
 .nav-wrap {
   padding: em(26px) em(85px) em(73px);
   ul li {
     float: left;
-    margin-right: rem(39px);}
+    padding: em(14px) em(21.5px);}
 }
 
 .personal-items {
+  margin-top: em(-14px);
   ul li {
     margin: 0;
-    padding-left: em(21.5px);
+    padding: em(14px) em(21.5px);
     float: right;}
 }
