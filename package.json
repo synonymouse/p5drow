@@ -25,8 +25,6 @@
     "gulp-postcss": "^6.1.0",
     "gulp-sass": "^2.1.1",
     "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2",
-    "postcss-scss": "^0.1.5",
-    "postcss-sorting": "^1.2.1"
+    "node-neat": "^1.7.2"
   }
 }
