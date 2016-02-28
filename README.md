@@ -1,4 +1,4 @@
-# A boilerplate that includes Gulp, SASS, Bourbon, Neat and BrowserSync for new projects
+# A boilerplate that includes Gulp, SASS, Bourbon and BrowserSync for new projects
 
 ### Included
 
@@ -7,7 +7,6 @@
 3. [Browsersync](https://www.browsersync.io/docs/gulp/)
 4. [Gulp Sass](https://www.npmjs.com/package/gulp-sass)
 5. [Bourbon](http://bourbon.io/)
-6. [Neat](http://neat.bourbon.io/)
 
 ### Installation Instructions
 
@@ -15,4 +14,3 @@
 2. ``cd https://github.com/synonymouse/bourbon_nojs_boilerplate.git``
 3. ``npm install``
 4. ``gulp`` (This assumes you have npm & Gulp installed globally)
-5.  To open a browser window with live-reloading, run ``gulp serve``
