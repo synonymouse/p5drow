@@ -7,7 +7,7 @@ var postcss = require('gulp-postcss');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var bourbon = require('node-bourbon').includePaths;
-var dirSync = require( 'gulp-directory-sync'),
+var dirSync = require( 'gulp-directory-sync');
 var browserSync = require('browser-sync');
 var injector = require('bs-html-injector');
 var reload = browserSync.reload;
@@ -62,7 +62,8 @@ gulp.task('sass', function () {
 // Image sync
 gulp.task('images:sync', function () {
   return gulp.src('')
-    .pipe(dirSync(f.dev + '/images', f.build + '/images'));
+    .pipe(dirSync(f.dev + '/images', f.build + '/images'))
+    .on('error', gutil.log);;
 });
 
 // Javascript sync
@@ -91,8 +92,8 @@ gulp.task('server', ['sass'], function () {
 gulp.task('watch', function () {
   gulp.watch(f.jade, ['jade']);
   gulp.watch(f.scss, ['sass']);
-  gulp.watch(f.scss, ['images:sync']);
-  gulp.watch(f.scss, ['js:sync']);
+  gulp.watch(f.dev + '/images', ['images:sync']);
+  gulp.watch(f.dev + '/js', ['js:sync']);
 });
 
 // Default Task
