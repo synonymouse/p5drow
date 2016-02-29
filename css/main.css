@@ -129,26 +129,6 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 
-.b-header {
-  height: 799px; }
-
-.nav-wrap {
-  width: 68.5rem;
-  height: 87px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.menu {
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: auto;
-  width: 507px; }
-
 .flex {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,6 +142,34 @@ textarea {
 
 .primary-mod {
   background-color: #f3f3f3; }
+
+.b-header {
+  height: 799px; }
+
+.nav-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  width: 68.5rem;
+  height: 5.4375rem; }
+  @media (max-width: 1200px) {
+    .nav-wrap {
+      height: 3.625rem;
+      width: 95%; } }
+
+.logo {
+  margin-top: auto; }
+
+.menu {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: auto;
+  margin-left: auto;
+  width: 31.6875rem;
+  list-style: none;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .b-header_mod {
   background-color: #e1e1e1; }
