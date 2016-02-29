@@ -1,12 +1,39 @@
 $fa-font-path: '../../build/fonts';
 
-//Background colors
+$breakpoints: (
+  'small'  : ( max-width:  767px ),
+  'medium' : ( max-width:  992px ),
+  'large'  : ( max-width: 1200px )
+);
+
+// Background colors
 $main-color: #f3f3f3;
 $header-color: #e1e1e1;
 $third-color: #e84c3d;
 
+// Mixins
+
+@mixin breakpoint($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// Global things
+
 .flex {
   display: flex;
+
   flex-flow: row wrap;
   align-items: stretch;
 }

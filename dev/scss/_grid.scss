@@ -1,21 +1,33 @@
 $nav-width: rem(1096px);
-$nav-margin-top: rem(57px);
+$nav-height: rem(87px);
+$menu-width: rem(507px);
 
 .b-header {
   height: 799px;
 }
 
 .nav-wrap {
-  width: $nav-width;
-  height: 87px;
   margin-right: auto;
   margin-left: auto;
+  width: $nav-width;
+  height: $nav-height;
+
+  @include breakpoint(large){
+    height: $nav-height/1.5;
+    width: 95%;
+  }
+}
+
+.logo {
+  margin-top: auto;
 }
 
 .menu {
   flex-direction: row;
-  list-style: none;
-  justify-content: space-between;
+  margin-top: auto;
   margin-left: auto;
-  width: 507px;
+  width: $menu-width;
+  list-style: none;
+
+  justify-content: space-between;
 }
