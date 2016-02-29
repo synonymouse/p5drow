@@ -17,7 +17,7 @@ html.no-js(lang='')
     link(rel='stylesheet', href='css/normalize.css')
     link(rel='stylesheet', href='css/main.css')
     script(src='js/vendor/modernizr-2.8.3.min.js')
-  body
+  body.primary-mod
     //if lt IE 8
       p.browserupgrade
         | You are using an
@@ -26,23 +26,24 @@ html.no-js(lang='')
         a(href='http://browsehappy.com/') upgrade your browser
         |  to improve your experience.
 
-    header.flex.b1
-      a(href="#"): img.b1__logo(src="images/logo.png", alt="")
-      nav.flex.menu
-        li.flex.menu__item
-          a.flex.menu__link(href="#") Home
-        li.menu__item
-          a.flex.menu__link(href="#") About
-        li.menu__item
-          a.flex.menu__link(href="#") Service
-        li.flex.menu__item
-          a.flex.menu__link(href="#") Portfolio
-        li.flex.menu__item
-          a.flex.menu__link(href="#") Team
-        li.flex.menu__item
-          a.flex.menu__link(href="#") Blog
-        li.flex.menu__item
-          a.flex.menu__link(href="#") Contact
+    header.flex.b-header.b-header_mod
+      .flex.nav-wrap
+        a(href="#"): img.logo(src="images/logo.png", alt="")
+        nav.flex.menu
+          li.menu__item
+            a.menu__link(href="#") Home
+          li.menu__item
+            a.menu__link(href="#") About
+          li.menu__item
+            a.menu__link(href="#") Service
+          li.menu__item
+            a.menu__link(href="#") Portfolio
+          li.menu__item
+            a.menu__link(href="#") Team
+          li.menu__item
+            a.menu__link(href="#") Blog
+          li.menu__item
+            a.menu__link(href="#") Contact
 
     main
     footer

@@ -1,6 +1,16 @@
 $fa-font-path: '../../build/fonts';
 
+//Background colors
+$main-color: #f3f3f3;
+$header-color: #e1e1e1;
+$third-color: #e84c3d;
+
 .flex {
-  flex: 1;
-  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.primary-mod {
+  background-color: $main-color;
 }

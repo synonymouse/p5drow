@@ -1,4 +1,21 @@
-.b1 {
+$nav-width: rem(1096px);
+$nav-margin-top: rem(57px);
+
+.b-header {
   height: 799px;
-  background-color: rgba(220, 220, 220, 0.8);
+}
+
+.nav-wrap {
+  width: $nav-width;
+  height: 87px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu {
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 507px;
 }
