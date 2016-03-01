@@ -1,4 +1,18 @@
-// Header, block 1
+// Size variables
+$b-header-height: rem(800px);
+
+  $nav-wrap-width: rem(1096px);
+  $nav-wrap-height: rem(87px);
+    $menu-width: rem(507px);
+
+$cutout-height: rem(713px);
+$cutout-width: 100%;
+
+  $tagline-box-width: rem(600px);
+
+// Colors, effects
+
+$shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
 
 // Logo, Navigation blocks
 
@@ -8,6 +22,9 @@
 }
 
 .nav-wrap {
+  position: absolute;
+  right: 0;
+  left: 0;
   margin-right: auto;
   margin-left: auto;
   width: $nav-wrap-width;
@@ -15,7 +32,6 @@
 
   @include breakpoint(large){
     width: 95%;
-
     height: $nav-wrap-height/1.5;
   }
 }
@@ -25,7 +41,6 @@
 }
 
 .menu {
-  flex-direction: row;
   margin-top: auto;
   margin-left: auto;
   width: $menu-width;
@@ -33,5 +48,105 @@
   text-transform: uppercase;
 
   justify-content: space-between;
+  &__link {
+    color: $menu-font-color;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: $menu-font-family;
+    line-height: 12px;
+  }
+}
+
+// Images cutout, tagline
+
+.cutout {
+  width: $cutout-width;
+  height: $cutout-height;
+}
+
+.tagline {
+  position: relative;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  margin: auto;
+  width: $tagline-box-width;
+
+  order: 2;
+  &__bot {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+}
+
+.headphones {
+  position: absolute;
+  top: rem(179px);
+  z-index: 1;
+  &__img {
+    @include shadow-filter;
+  }
+}
+
+.glasses {
+  position: absolute;
+  top: rem(490px);
+  left: rem(229px);
+  z-index: 1;
+  &__img {
+    @include shadow-filter;
+  }
+}
+
+.pencils {
+  position: absolute;
+  top: rem(663px);
+  left: rem(81px);
+  z-index: 1;
+  &__img {
+    @include shadow-filter;
+  }
+}
+
+.mouse {
+  position: absolute;
+  top: rem(612px);
+  right: rem(240px);
+  z-index: 1;
+  &__img {
+    @include shadow-filter;
+  }
+}
+
+.pen-holder {
+  position: absolute;
+  top: rem(469px);
+  right: rem(39px);
+  z-index: 1;
+  &__img {
+    @include shadow-filter;
+  }
+}
+
+.glass {
+  position: absolute;
+  top: rem(262px);
+  right: rem(85px);
+  z-index: 2;
+  &__img {
+    @include shadow-filter;
+  }
+}
+
+.cork-coaster {
+  position: absolute;
+  top: rem(280px);
+  right: rem(91px);
+  z-index: 1;
+  &__img {
+    filter: 0;
+  }
 }
 

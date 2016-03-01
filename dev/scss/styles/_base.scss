@@ -5,7 +5,8 @@ h1 {
   font-family: $h-font-family;
   font-size: 35px;
   font-weight: 500;
-  line-height: 201px;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
 h2 {
@@ -13,7 +14,6 @@ h2 {
   font-family: $h-font-family;
   font-size: 20px;
   font-weight: 500;
-  line-height: 12px;
 }
 
 h3 {
@@ -21,28 +21,24 @@ h3 {
   font-family: $h-font-family;
   font-size: 16px;
   font-weight: 700;
-  line-height: 25px;
 }
 
 p {
   color: $h3-p-color;
-  font-family: $h-font-family;
+  font-family: $p-font-family;
   font-size: 14px;
   font-weight: 400;
-  line-height: 25px;
 }
 
 a {
-  color: #000;
+  color: $a-color;
   text-decoration: none;
+  transition:.5s;
   &:hover {
     text-decoration: none;
-    &:visited {
-    text-decoration: none;
-    color: #000;
+    color: $a-color-hover;
     }
   }
-}
 
 .flex {
   display: flex;
