@@ -1,20 +1,22 @@
-$nav-width: rem(1096px);
-$nav-height: rem(87px);
-$menu-width: rem(507px);
+// Header, block 1
+
+// Logo, Navigation blocks
 
 .b-header {
-  height: 799px;
+  height: $b-header-height;
+  background-color: $header-color;
 }
 
 .nav-wrap {
   margin-right: auto;
   margin-left: auto;
-  width: $nav-width;
-  height: $nav-height;
+  width: $nav-wrap-width;
+  height: $nav-wrap-height;
 
   @include breakpoint(large){
-    height: $nav-height/1.5;
     width: 95%;
+
+    height: $nav-wrap-height/1.5;
   }
 }
 
@@ -28,6 +30,8 @@ $menu-width: rem(507px);
   margin-left: auto;
   width: $menu-width;
   list-style: none;
+  text-transform: uppercase;
 
   justify-content: space-between;
 }
+

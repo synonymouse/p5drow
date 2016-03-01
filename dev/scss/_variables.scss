@@ -1,5 +1,13 @@
 $fa-font-path: '../../build/fonts';
 
+// Grid values
+$b-header-height: rem(800px);
+
+  $nav-wrap-width: rem(1096px);
+  $nav-wrap-height: rem(87px);
+    $menu-width: rem(507px);
+
+// Breakpoints
 $breakpoints: (
   'small'  : ( max-width:  767px ),
   'medium' : ( max-width:  992px ),
@@ -11,8 +19,22 @@ $main-color: #f3f3f3;
 $header-color: #e1e1e1;
 $third-color: #e84c3d;
 
-// Mixins
+/* Fonts */
 
+// Font colors
+$h1-h2-color: #333b46;
+$h3-p-color: #81868e;
+$menu-font-color: #333b46;
+
+// Fonts-family
+$h-font-family: 'Roboto', sans-serif;
+$p-font-family: 'Open Sans', sans-serif;
+$menu-font-family: 'Open Sans', sans-serif;
+$button-font-family: 'Roboto', sans-serif;
+
+/* Mixins */
+
+//Breakpoint mixin
 @mixin breakpoint($name) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $name) {
@@ -29,15 +51,11 @@ $third-color: #e84c3d;
   }
 }
 
-// Global things
+//Menu font
+@mixin menu-font {
+  color: $menu-font-color;
+  font-family: $menu-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;}
 
-.flex {
-  display: flex;
-
-  flex-flow: row wrap;
-  align-items: stretch;
-}
-
-.primary-mod {
-  background-color: $main-color;
-}
