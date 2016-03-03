@@ -20,6 +20,8 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
 .b-header {
   height: $b-header-height;
   background-color: $header-color;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-wrap {
@@ -62,22 +64,11 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
 
 // Images cutout, tagline
 
-.cutout {
-  position: relative;
-
-  width: $cutout-width;
-  height: $cutout-height;
-}
-
 .tagline {
   position: relative;
   right: 0;
   left: 0;
   z-index: 9999;
-  margin: auto;
-  width: $tagline-box-width;
-
-  order: 2;
   &__up{
     margin: auto;
   }
@@ -94,6 +85,7 @@ $headphones-width: 251px;
 .headphones {
   position: absolute;
   top: rem(179px);
+  left: 0;
   z-index: 1;
   @include width-calc(251px, $vw)
   &__img {
