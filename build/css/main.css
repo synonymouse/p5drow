@@ -132,6 +132,54 @@ textarea {
 
 /* Fonts */
 /* Mixins */
+h1 {
+  color: #333b46;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0; }
+
+h2 {
+  color: #333b46;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500; }
+
+h3 {
+  color: #81868e;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700; }
+
+p {
+  color: #81868e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+a {
+  color: #333b46;
+  text-decoration: none;
+  transition: .5s; }
+  a:hover {
+    text-decoration: none;
+    color: #81868e; }
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.primary-mod {
+  background-color: #f3f3f3; }
+
 .b-header {
   height: 50rem;
   background-color: #e1e1e1; }
@@ -293,52 +341,22 @@ textarea {
     font-size: 12px;
     font-family: Open Sans; }
 
-h1 {
-  color: #333b46;
-  font-family: "Roboto", sans-serif;
-  font-size: 35px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin: 0; }
+.b-main {
+  height: 84.8125rem;
+  width: 68.125rem;
+  box-sizing: border-box;
+  padding: 6.25rem 0 6.25rem 0;
+  margin: auto; }
 
-h2 {
-  color: #333b46;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 500; }
+.content-top {
+  height: 35.375rem;
+  width: 85.375rem;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
-h3 {
-  color: #81868e;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700; }
-
-p {
-  color: #81868e;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400; }
-
-a {
-  color: #333b46;
-  text-decoration: none;
-  transition: .5s; }
-  a:hover {
-    text-decoration: none;
-    color: #81868e; }
-
-.flex {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
-
-.primary-mod {
-  background-color: #f3f3f3; }
+.graxpo {
+  height: 19.3125rem;
+  width: 28.375rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+// Size variables
+$b-main-height: rem(1357px);
+$b-main-width: rem(1090px);
+
+$b-main-padding-top-bot: rem(100px) 0 rem(100px) 0;
+
+  $content-top-height: rem(566px);
+  $content-top-width: rem(1366px);
+
+$graxpo-height: rem(309px);
+$graxpo-width: rem(454px);
+
+.b-main {
+  height: $b-main-height;
+  width: $b-main-width;
+  box-sizing: border-box;
+  padding: $b-main-padding-top-bot;
+  margin: auto;
+}
+
+.content-top {
+  height: $content-top-height;
+  width: $content-top-width;
+  justify-content: space-between;
+}
+
+.graxpo {
+  height: $graxpo-height;
+  width: $graxpo-width;
+}
