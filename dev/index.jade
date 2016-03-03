@@ -16,6 +16,7 @@ html.no-js(lang='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='css/normalize.css')
     link(rel='stylesheet', href='css/main.css')
+    script(src='js/picturefill.min.js' async)
     script(src='js/vendor/modernizr-2.8.3.min.js')
   body.primary-mod
     //if lt IE 8
@@ -50,7 +51,7 @@ html.no-js(lang='')
           h1.tagline__up ГОЛАКТЕКО ОПАСНОСТЕ!
           p.tagline__bot Я идиот! Убейте меня, кто-нибудь!
         .headphones
-          img.headphones__img(src="images/headphones.png", alt="")
+          img.headphones__img( src="images/headphones.png", alt="")
         .glasses
           img.glasses__img(src="images/glasses.png", alt="")
         .pencils
@@ -63,6 +64,10 @@ html.no-js(lang='')
           img.glass__img(src="images/glass.png", alt="")
         .cork-coaster
           img.cork-coaster__img(src="images/cork-coaster.png", alt="")
+        .icon-mouse
+          img.icon-mouse__img(src="images/icon-mouse.png", alt="")
+          span.icon-mouse__text scroll down
+
     main
     footer
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')

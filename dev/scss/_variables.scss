@@ -52,3 +52,6 @@ $button-font-family: 'Roboto', sans-serif;
 
 @mixin shadow-filter{
   filter: $shadow-filter-img};
+
+@mixin width-calc($value, $vw){
+ width: $value*100%/$vw}; // img width*100%/viewport width

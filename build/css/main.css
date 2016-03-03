@@ -150,7 +150,8 @@ textarea {
       height: 3.625rem; } }
 
 .logo {
-  margin-top: auto; }
+  margin-top: auto;
+  z-index: 1; }
 
 .menu {
   margin-top: auto;
@@ -158,6 +159,7 @@ textarea {
   width: 31.6875rem;
   list-style: none;
   text-transform: uppercase;
+  z-index: 1;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -169,8 +171,9 @@ textarea {
     line-height: 12px; }
 
 .cutout {
+  position: relative;
   width: 100%;
-  height: 44.5625rem; }
+  height: 50rem; }
 
 .tagline {
   position: relative;
@@ -182,8 +185,10 @@ textarea {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2; }
+  .tagline__up {
+    margin: auto; }
   .tagline__bot {
-    display: block;
+    margin: auto;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px; }
@@ -191,64 +196,102 @@ textarea {
 .headphones {
   position: absolute;
   top: 11.1875rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 13.07292%; }
   .headphones__img {
     -webkit-filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
-            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3)); }
+            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    height: auto; }
 
 .glasses {
   position: absolute;
   top: 30.625rem;
   left: 14.3125rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 8.80208%; }
   .glasses__img {
     -webkit-filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
-            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3)); }
+            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    height: auto; }
 
 .pencils {
   position: absolute;
   top: 41.4375rem;
   left: 5.0625rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 10.26042%; }
   .pencils__img {
     -webkit-filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
-            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3)); }
+            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    height: auto; }
 
 .mouse {
   position: absolute;
   top: 38.25rem;
   right: 15rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 4.11458%; }
   .mouse__img {
     -webkit-filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
-            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3)); }
+            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    height: auto; }
 
 .pen-holder {
   position: absolute;
   top: 29.3125rem;
   right: 2.4375rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 8.02083%; }
   .pen-holder__img {
     -webkit-filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
-            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3)); }
+            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    height: auto; }
 
 .glass {
   position: absolute;
   top: 16.375rem;
   right: 5.3125rem;
-  z-index: 2; }
+  z-index: 2;
+  width: 6.19792%; }
   .glass__img {
     -webkit-filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
-            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3)); }
+            filter: drop-shadow(14px 0px 1px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    height: auto; }
 
 .cork-coaster {
   position: absolute;
   top: 17.5rem;
   right: 5.6875rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 5.88542%; }
   .cork-coaster__img {
+    max-width: 100%;
+    height: auto;
     -webkit-filter: 0;
             filter: 0; }
+
+.icon-mouse {
+  position: absolute;
+  top: 42.5625rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 85px;
+  height: 66px;
+  text-align: center; }
+  .icon-mouse__text {
+    display: block;
+    padding-top: 15px;
+    color: #e84c3d;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Open Sans; }
 
 h1 {
   color: #333b46;

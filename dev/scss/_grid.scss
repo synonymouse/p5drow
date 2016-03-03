@@ -1,11 +1,12 @@
 // Size variables
+$vw: 1920px;
 $b-header-height: rem(800px);
 
   $nav-wrap-width: rem(1096px);
   $nav-wrap-height: rem(87px);
     $menu-width: rem(507px);
 
-$cutout-height: rem(713px);
+$cutout-height: rem(800px);
 $cutout-width: 100%;
 
   $tagline-box-width: rem(600px);
@@ -38,6 +39,7 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
 
 .logo {
   margin-top: auto;
+  z-index: 1;
 }
 
 .menu {
@@ -46,6 +48,7 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   width: $menu-width;
   list-style: none;
   text-transform: uppercase;
+  z-index: 1;
 
   justify-content: space-between;
   &__link {
@@ -60,6 +63,8 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
 // Images cutout, tagline
 
 .cutout {
+  position: relative;
+
   width: $cutout-width;
   height: $cutout-height;
 }
@@ -73,30 +78,41 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   width: $tagline-box-width;
 
   order: 2;
+  &__up{
+    margin: auto;
+  }
   &__bot {
-    display: block;
+    margin: auto;
+
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
   }
 }
+$headphones-width: 251px;
 
 .headphones {
   position: absolute;
   top: rem(179px);
   z-index: 1;
+  @include width-calc(251px, $vw)
   &__img {
     @include shadow-filter;
+    max-width: 100%;
+    height: auto;
+    }
   }
-}
 
 .glasses {
   position: absolute;
   top: rem(490px);
   left: rem(229px);
   z-index: 1;
+  @include width-calc(169px, $vw)
   &__img {
     @include shadow-filter;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -105,8 +121,11 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   top: rem(663px);
   left: rem(81px);
   z-index: 1;
+  @include width-calc(197px, $vw)
   &__img {
     @include shadow-filter;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -115,8 +134,11 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   top: rem(612px);
   right: rem(240px);
   z-index: 1;
+  @include width-calc(79px, $vw)
   &__img {
     @include shadow-filter;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -125,8 +147,11 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   top: rem(469px);
   right: rem(39px);
   z-index: 1;
+  @include width-calc(154px, $vw)
   &__img {
     @include shadow-filter;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -135,8 +160,11 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   top: rem(262px);
   right: rem(85px);
   z-index: 2;
+  @include width-calc(119px, $vw);
   &__img {
     @include shadow-filter;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -145,8 +173,31 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   top: rem(280px);
   right: rem(91px);
   z-index: 1;
+  @include width-calc(113px, $vw)
   &__img {
+    max-width: 100%;
+    height: auto;
     filter: 0;
+  }
+}
+
+.icon-mouse {
+  position: absolute;
+  top: rem(681px);
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 85px;
+  height: 66px;
+
+  text-align: center;
+  &__text {
+    display: block;
+    padding-top: 15px;
+    color: #e84c3d;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Open Sans;
   }
 }
 
