@@ -135,7 +135,7 @@ textarea {
 h1 {
   color: #333b46;
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 500;
   letter-spacing: 2px;
   margin: 0; }
@@ -143,19 +143,19 @@ h1 {
 h2 {
   color: #333b46;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500; }
 
 h3 {
   color: #81868e;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700; }
 
 p {
   color: #81868e;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400; }
 
 a {
@@ -340,15 +340,17 @@ a {
     font-family: Open Sans; }
 
 .b-main {
-  height: 84.8125rem;
-  width: 68.125rem;
+  height: 70.67708%;
+  width: 100%;
   box-sizing: border-box;
   padding: 6.25rem 0 6.25rem 0;
-  margin: auto; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .content-top {
   height: 35.375rem;
-  width: 85.375rem;
+  width: 72.18155%;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -356,5 +358,8 @@ a {
 .graxpo {
   height: 19.3125rem;
   width: 28.375rem; }
+  .graxpo__button {
+    height: 163px;
+    width: 43px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,22 +1,21 @@
 // Size variables
 $vw: 1920px;
+
 $b-header-height: rem(800px);
 
-  $nav-wrap-width: rem(1096px);
-  $nav-wrap-height: rem(87px);
-    $menu-width: rem(507px);
+$nav-wrap-width: rem(1096px);
+$nav-wrap-height: rem(87px);
+
+$menu-width: rem(507px);
 
 $cutout-height: rem(800px);
 $cutout-width: 100%;
-
-  $tagline-box-width: rem(600px);
+$tagline-box-width: rem(600px);
 
 // Colors, effects
-
 $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
 
 // Logo, Navigation blocks
-
 .b-header {
   height: $b-header-height;
   background-color: $header-color;
@@ -33,7 +32,7 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   width: $nav-wrap-width;
   height: $nav-wrap-height;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     width: 95%;
     height: $nav-wrap-height/1.5;
   }
@@ -51,8 +50,8 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   list-style: none;
   text-transform: uppercase;
   z-index: 1;
-
   justify-content: space-between;
+
   &__link {
     color: $menu-font-color;
     font-weight: 400;
@@ -61,46 +60,46 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
     line-height: 12px;
   }
 }
-
 // Images cutout, tagline
-
 .tagline {
   position: relative;
   right: 0;
   left: 0;
   z-index: 9999;
-  &__up{
+
+  &__up {
     margin: auto;
   }
+
   &__bot {
     margin: auto;
-
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
   }
 }
-$headphones-width: 251px;
 
 .headphones {
   position: absolute;
   top: rem(179px);
   left: 0;
   z-index: 1;
-  @include width-calc(251px, $vw)
+  @include width-calc(251px, $vw);
+
   &__img {
     @include shadow-filter;
     max-width: 100%;
     height: auto;
-    }
   }
+}
 
 .glasses {
   position: absolute;
   top: rem(490px);
   left: rem(229px);
   z-index: 1;
-  @include width-calc(169px, $vw)
+  @include width-calc(169px, $vw);
+
   &__img {
     @include shadow-filter;
     max-width: 100%;
@@ -113,7 +112,8 @@ $headphones-width: 251px;
   top: rem(663px);
   left: rem(81px);
   z-index: 1;
-  @include width-calc(197px, $vw)
+  @include width-calc(197px, $vw);
+
   &__img {
     @include shadow-filter;
     max-width: 100%;
@@ -126,7 +126,8 @@ $headphones-width: 251px;
   top: rem(612px);
   right: rem(240px);
   z-index: 1;
-  @include width-calc(79px, $vw)
+  @include width-calc(79px, $vw);
+
   &__img {
     @include shadow-filter;
     max-width: 100%;
@@ -139,7 +140,8 @@ $headphones-width: 251px;
   top: rem(469px);
   right: rem(39px);
   z-index: 1;
-  @include width-calc(154px, $vw)
+  @include width-calc(154px, $vw);
+
   &__img {
     @include shadow-filter;
     max-width: 100%;
@@ -153,6 +155,7 @@ $headphones-width: 251px;
   right: rem(85px);
   z-index: 2;
   @include width-calc(119px, $vw);
+
   &__img {
     @include shadow-filter;
     max-width: 100%;
@@ -165,11 +168,12 @@ $headphones-width: 251px;
   top: rem(280px);
   right: rem(91px);
   z-index: 1;
-  @include width-calc(113px, $vw)
+  @include width-calc(113px, $vw);
+
   &__img {
     max-width: 100%;
     height: auto;
-    filter: 0;
+    filter:0;
   }
 }
 
@@ -181,8 +185,8 @@ $headphones-width: 251px;
   margin: auto;
   width: 85px;
   height: 66px;
-
   text-align: center;
+
   &__text {
     display: block;
     padding-top: 15px;
@@ -192,4 +196,3 @@ $headphones-width: 251px;
     font-family: Open Sans;
   }
 }
-
