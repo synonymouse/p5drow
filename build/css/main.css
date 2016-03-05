@@ -178,7 +178,8 @@ a {
           align-items: stretch; }
 
 .primary-mod {
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  box-sizing: border-box; }
 
 .b-header {
   height: 50rem;
@@ -339,18 +340,20 @@ a {
     font-size: 12px;
     font-family: Open Sans; }
 
-.b-main {
-  height: 70.67708%;
-  width: 100%;
+.main-a {
+  height: 84.8125rem;
+  max-width: 85.375rem;
   box-sizing: border-box;
   padding: 6.25rem 0 6.25rem 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: auto; }
 
 .content-top {
-  height: 35.375rem;
+  height: auto;
   width: 72.18155%;
+  margin: 0 8.5rem;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -358,8 +361,41 @@ a {
 .graxpo {
   height: 19.3125rem;
   width: 28.375rem; }
+  .graxpo__h:after {
+    width: 46px;
+    height: 3px;
+    border: 5px solid #898989; }
   .graxpo__button {
     height: 163px;
     width: 43px; }
+
+.template {
+  width: 27.75rem; }
+  .template__img {
+    width: 100%;
+    height: auto; }
+
+.content-bot {
+  height: 43.3125rem;
+  width: 79.72182%;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center; }
+
+.what-we {
+  width: 100%;
+  text-align: center; }
+
+.box {
+  width: 33.0625rem;
+  height: 14.8125rem;
+  border: 3px solid #ebebeb;
+  border-radius: 10px;
+  padding: 30px 34px;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */
