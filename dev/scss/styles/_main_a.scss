@@ -1,6 +1,6 @@
 // Size variables
 $b-main-height: rem(1357px);
-$b-main-width: percentage(1366px/$vw);
+$b-main-width: rem(1366px);
 
 $b-main-padding-top-bot: rem(100px) 0 rem(100px) 0;
 
@@ -19,17 +19,17 @@ $content-bot-height: rem(693px);
 $content-bot-width: percentage(1089px/1366px);
 //box
 $content-bot-box-height: rem(237px);
-$content-bot-box-width: rem(529px);
+$content-bot-box-width: percentage(529px/1089px);
 $content-bot-box-border: 3px solid #ebebeb;
 $content-bot-box-border-radius: 10px;
 $content-bot-box-padding: 30px 34px;
 
 .main-a {
   height: $b-main-height;
-  max-width: rem(1366px);
+  max-width: $b-main-width;
   box-sizing: border-box;
   padding: $b-main-padding-top-bot;
-  justify-content: space-around;;
+  justify-content: space-around;
   margin: auto;
 }
 
@@ -43,13 +43,18 @@ $content-bot-box-padding: 30px 34px;
 .graxpo {
   height: $graxpo-height;
   width: $graxpo-width;
-  &__h {
-    &:after {
-      width: 46px;
-      height: 3px;
-      border: 5px solid #898989;
-    }
+
+  &__h--seperator:after {
+    margin-top: 20px;
+    content: "";
+    display: block;
+    width: 46px;
+    border: 1px solid #898989;
   }
+  &__text {
+    margin-top: 30px;
+  }
+
   &__button {
     height: $button-height;
     width: $button-width;
@@ -58,6 +63,7 @@ $content-bot-box-padding: 30px 34px;
 
 .template {
   width: $template-width;
+
   &__img {
     width: 100%;
     height: auto;
@@ -72,8 +78,19 @@ $content-bot-box-padding: 30px 34px;
 }
 
 .what-we {
+  text-align: center;
   width: 100%;
-  text-align: center;;
+  &__h--seperator:after {
+    margin: auto;
+    margin-top: 20px;
+    content: "";
+    display: block;
+    width: 46px;
+    border: 1px solid #898989;
+  }
+  &__text {
+    margin-top: 30px;
+  }
 }
 
 .box {

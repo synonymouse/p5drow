@@ -144,7 +144,8 @@ h2 {
   color: #333b46;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1em; }
 
 h3 {
   color: #81868e;
@@ -156,7 +157,8 @@ p {
   color: #81868e;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 25px; }
 
 a {
   color: #333b46;
@@ -361,10 +363,14 @@ a {
 .graxpo {
   height: 19.3125rem;
   width: 28.375rem; }
-  .graxpo__h:after {
+  .graxpo__h--seperator:after {
+    margin-top: 20px;
+    content: "";
+    display: block;
     width: 46px;
-    height: 3px;
-    border: 5px solid #898989; }
+    border: 1px solid #898989; }
+  .graxpo__text {
+    margin-top: 30px; }
   .graxpo__button {
     height: 163px;
     width: 43px; }
@@ -387,11 +393,20 @@ a {
           align-items: center; }
 
 .what-we {
-  width: 100%;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+  .what-we__h--seperator:after {
+    margin: auto;
+    margin-top: 20px;
+    content: "";
+    display: block;
+    width: 46px;
+    border: 1px solid #898989; }
+  .what-we__text {
+    margin-top: 30px; }
 
 .box {
-  width: 33.0625rem;
+  width: 48.57668%;
   height: 14.8125rem;
   border: 3px solid #ebebeb;
   border-radius: 10px;
