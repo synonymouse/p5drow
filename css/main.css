@@ -202,7 +202,7 @@ a {
   margin-left: auto;
   width: 68.5rem;
   height: 5.4375rem; }
-  @media (max-width: 1200px) {
+  @media (min-width: 1200px) {
     .nav-wrap {
       width: 95%;
       height: 3.625rem; } }
@@ -411,6 +411,10 @@ a {
   border: 3px solid #ebebeb;
   border-radius: 10px;
   padding: 30px 34px;
+  margin-bottom: 35px;
   box-sizing: border-box; }
+  @media (max-width: 767px) {
+    .box {
+      width: auto; } }
 
 /*# sourceMappingURL=main.css.map */
