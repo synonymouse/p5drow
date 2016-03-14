@@ -23,6 +23,7 @@ $content-bot-box-width: percentage(529px/1089px);
 $content-bot-box-border: 3px solid #ebebeb;
 $content-bot-box-border-radius: 10px;
 $content-bot-box-padding: 30px 34px;
+$content-bot-box-margin: 35px;
 
 .main-a {
   height: $b-main-height;
@@ -99,5 +100,10 @@ $content-bot-box-padding: 30px 34px;
   border: $content-bot-box-border;
   border-radius: $content-bot-box-border-radius;
   padding: $content-bot-box-padding;
+  margin-bottom: $content-bot-box-margin;
   box-sizing: border-box;
+
+  @include breakpoint(small) {
+    width: auto;
+  }
 }
