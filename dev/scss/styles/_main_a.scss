@@ -7,7 +7,7 @@ $b-main-padding-top-bot: rem(100px) 0 rem(100px) 0;
 $content-top-height: auto;
 $content-top-width: percentage(986px/1366px);
 
-$graxpo-height: rem(309px);
+$graxpo-height: auto;
 $graxpo-width: rem(454px);
 
 $button-height: 163px;
@@ -15,10 +15,10 @@ $button-width: 43px;
 
 $template-width: rem(444px);
 
-$content-bot-height: rem(693px);
+$content-bot-height: auto;
 $content-bot-width: percentage(1089px/1366px);
 //box
-$content-bot-box-height: rem(237px);
+$content-bot-box-height: auto;
 $content-bot-box-width: percentage(529px/1089px);
 $content-bot-box-border: 3px solid #ebebeb;
 $content-bot-box-border-radius: 10px;
@@ -75,12 +75,13 @@ $content-bot-box-margin: 35px;
   height: $content-bot-height;
   width: $content-bot-width;
   justify-content: space-between;
-  align-items: center;
 }
 
 .what-we {
   text-align: center;
   width: 100%;
+  padding-bottom: rem(30px);
+
   &__h--seperator:after {
     margin: auto;
     margin-top: 20px;
