@@ -10,6 +10,7 @@ var bourbon = require('node-bourbon').includePaths;
 var dirSync = require( 'gulp-directory-sync');
 var browserSync = require('browser-sync');
 var injector = require('bs-html-injector');
+// var ghPages = require('gulp-gh-pages');
 var reload = browserSync.reload;
 
 var f = {
@@ -86,6 +87,13 @@ gulp.task('server', ['sass'], function () {
     notify: false
   });
 });
+
+// //Deploy to github pages
+//
+// gulp.task('deploy', function() {
+//   return gulp.src('./build/**/*')
+//     .pipe(ghPages());
+// });
 
 //Watch
 

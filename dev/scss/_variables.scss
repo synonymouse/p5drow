@@ -4,7 +4,7 @@ $fa-font-path: '../../build/fonts';
 $bp: (
   'small'  : ( max-width:  767px ),
   'medium' : ( max-width:  992px ),
-  'large'  : ( min-width: 1200px )
+  'large'  : ( max-width: 1200px )
 );
 
 // Background colors
