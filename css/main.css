@@ -202,7 +202,7 @@ a {
   margin-left: auto;
   width: 68.5rem;
   height: 5.4375rem; }
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) {
     .nav-wrap {
       width: 95%;
       height: 3.625rem; } }
