@@ -42,7 +42,53 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   margin-top: auto;
   z-index: 1;
 }
+// Mobile menu
+.mobile-menu {
+  display: none;
+  width: 30%;
+  list-style: none;
+  position:absolute;
+  top:0;
+  right:0;
 
+  .expanded {
+    display: none;
+    position: relative;
+    z-index: 9999999;
+    background: #eee;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+      &:hover {
+        color: $a-color-hover;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    display: block;
+  }
+}
+
+.hamburger {
+  background:none;
+  position:relative;
+  top: 10px;
+  left: 80px;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:999999;
+}
+
+// Menu
 .menu {
   margin-top: auto;
   margin-left: auto;
@@ -51,6 +97,10 @@ $shadow-filter-img: drop-shadow( 14px 0px 1px rgba( 0, 0, 0, 0.300 ));
   text-transform: uppercase;
   z-index: 1;
   justify-content: space-between;
+
+  @include breakpoint(small) {
+    display: none;
+  }
 
   &__link {
     color: $menu-font-color;
